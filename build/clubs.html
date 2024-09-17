@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCSS Clubs</title>
+    <link rel="stylesheet" href="css/clubs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
+
+    <link rel="icon" type="image/x-icon" href="https://central.tvdsb.ca/en/images/structure/logo.jpg">
+</head>
+        <div class="backwrap gradient">
+            <div class="back-shapes"> 
+
+
+                <div class="grid w-4/5 m-auto mt-10 mb-10 gap-y-20">
+                    
+                    <!-- header -->
+                    <div class="grid grid-cols-3 w-4/5 m-auto">
+                        <div class="col-span-1">
+                            <img class="w-28 m-auto" src="https://cdn.discordapp.com/attachments/725390783716393041/1204194472447967282/central.png?ex=65d3d87f&is=65c1637f&hm=306e7ba4d30c23e003e73d7ad620175cb4c8a9fe323dce59938541542514030d&">
+                        </div>
+                        <div class="flex col-span-2 items-center justify-left">
+                            <h1 class="text-7xl">Central Clubs</h1>
+                        </div>
+                    </div>
+
+                    <div class="">
+
+                        <!-- tab menu -->
+                        <div class="flex flex-row">
+                            <button class="px-8 py-4 text-xl duration-300 active:bg-slate-200 text-amber-200 border-b-2 border-amber-200" onclick="openClub(event, 'clubs', 'clubLink')" id="clubLink" name="links">Clubs</button>
+                            <button class="px-8 py-4 text-xl duration-300 active:bg-slate-200 text-purple-500" onclick="openClub(event, 'sports', 'sportLink')" id="sportLink" name="links">Sports</button>
+                        </div>
+
+
+                        <!-- clubs tab -->
+                        <div id="clubs" class="text-purple-500 w-full" name="tab">
+
+
+                            <div class="flex flex-wrap p-10 gap-x-32 gap-y-16 justify-center">
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4"  onmouseover="showWords(event, 'clubdesc1')" onmouseout="hideWords(event, 'clubdesc1')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="clubdesc1">This club is abt ....</p>
+                                        <img class="border-4 border-purple-700" 
+                                        src="https://imgs.search.brave.com/oT94WrFWLNAX8ZwCJaOvKLzXC8bjgg2cx9mydX-WYxM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0LzgxLzMzLzY3/LzM2MF9GXzQ4MTMz/Njc5M18yUEF5czcx/N2cxdjBhbXl1aTJ3/WEJzNkc1UTNmcGph/cS5qcGc">
+                                    </div>
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2">Progrmming Club</h2>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4"  onmouseover="showWords(event, 'clubdesc2')" onmouseout="hideWords(event, 'clubdesc2')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="clubdesc2">This club is abt ....</p>
+                                        <img class="border-4 border-purple-700" 
+                                        src="https://imgs.search.brave.com/UnrwTb9vlVfmJDlmSttoW1yK5lt7-ZiqYRerKv2B8_4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzQ4LzM5Lzc0/LzM2MF9GXzM0ODM5/NzQwNF93WHVmMjJH/VVBOQWg2N2h0Qlpa/bmFEU3gzQmo5Mnll/cC5qcGc">
+                                    </div>
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2">Competetive Progrmming Club</h2>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4"  onmouseover="showWords(event, 'clubdesc3')" onmouseout="hideWords(event, 'clubdesc3')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="clubdesc3">This club is abt ....</p>
+                                        <img class="border-4 border-purple-700"
+                                        src="https://imgs.search.brave.com/3gjbKa2IhZJHNvcn4Nk8Q_cO9cWtFRS5Z2D2Gz-KN54/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzk4LzIyLzA5/LzM2MF9GXzE5ODIy/MDkzOV9Fc1VVdVI4/U1p6ckNNNnFheG1E/ZWhpNHR0cjlaakhp/by5qcGc">
+                                    </div>
+
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2">Chess Club</h2>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4"  onmouseover="showWords(event, 'clubdesc4')" onmouseout="hideWords(event, 'clubdesc4')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="clubdesc4">This club is abt ....</p>
+                                        <img class="border-4 border-purple-700" height="200"
+                                        src="https://imgs.search.brave.com/tGnWDs-MbFUowKgPQe7ZQmW3Zpy8ucI-IIx50Tskwdg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzU0LzgwLzQx/LzM2MF9GXzM1NDgw/NDE1MV9Qa1lTQ0J6/Y3BEY3VQNGpETlNY/VWVRbTVGR2xibHhT/MC5qcGc">
+                                    </div>
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2">STEM Club</h2>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- sports tab -->
+                        <div id="sports" class="hidden text-purple-500" name="tab">
+                            <div class="flex flex-wrap p-10 gap-x-32 gap-y-16 justify-center">
+
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4" onmouseover="showWords(event, 'sportdesc1')" onmouseout="hideWords(event, 'sportdesc1')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="sportdesc1">This sport is abt ....</p>
+                                        <img class="border-4 border-purple-700" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2 ">Test Sport</h2>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4" onmouseover="showWords(event, 'sportdesc2')" onmouseout="hideWords(event, 'sportdesc2')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="sportdesc2">This sport is abt ....</p>
+                                        <img class="border-4 border-purple-700" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2 ">Test Sport</h2>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4" onmouseover="showWords(event, 'sportdesc3')" onmouseout="hideWords(event, 'sportdesc3')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="sportdesc3">This sport is abt ....</p>
+                                        <img class="border-4 border-purple-700" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2 ">Test Sport</h2>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-rows-5">
+                                    <div class="relative duration-300 hover:opacity-50 row-span-4" onmouseover="showWords(event, 'sportdesc4')" onmouseout="hideWords(event, 'sportdesc4')">
+                                        <p class="hidden absolute w-full h-full left-4 top-4 opacity-100" id="sportdesc4">This sport is abt ....</p>
+                                        <img class="border-4 border-purple-700" width="500"
+                                        src="https://imgs.search.brave.com/jqfsgcj2oKicHyyrqYObp3jvi5iXEKro4D9Ro6Pazzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvY29vbC1waWN0/dXJlcy0xbjU5Ymti/aGM4bWlldWxxLmpw/Zw">
+                                    </div>
+                                    <div class="flex items-center justify-center border-x-2 border-b-2 border-purple-700 row-span-1">
+                                        <h2 class="text-3xl text-center font-bold p-2 ">Test Sport</h2>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+    
+    
+    
+    
+                <span class="floating circle" style="top:66.59856996935649%;left:13.020833333333334%;animation-delay:-0.9s;"></span>
+                <span class="floating triangle" style="top:31.46067415730337%;left:33.59375%;animation-delay:-4.8s;"></span>
+                <span class="floating cross" style="top:76.50663942798774%;left:38.020833333333336%;animation-delay:-4s;"></span>
+                <span class="floating square" style="top:21.450459652706844%;left:14.0625%;animation-delay:-2.8s;"></span>
+                <span class="floating square" style="top:58.12053115423902%;left:56.770833333333336%;animation-delay:-2.15s;"></span>
+                <span class="floating square" style="top:8.682328907048008%;left:72.70833333333333%;animation-delay:-1.9s;"></span>
+                <span class="floating cross" style="top:31.3585291113381%;left:58.541666666666664%;animation-delay:-0.65s;"></span>
+                <span class="floating cross" style="top:69.96935648621042%;left:81.45833333333333%;animation-delay:-0.4s;"></span>
+                <span class="floating circle" style="top:15.117466802860061%;left:32.34375%;animation-delay:-4.1s;"></span>
+                <span class="floating circle" style="top:13.074565883554648%;left:45.989583333333336%;animation-delay:-3.65s;"></span>
+                <span class="floating cross" style="top:55.87334014300306%;left:27.135416666666668%;animation-delay:-2.25s;"></span>
+                <span class="floating cross" style="top:49.54034729315628%;left:53.75%;animation-delay:-2s;"></span>
+                <span class="floating cross" style="top:34.62717058222676%;left:49.635416666666664%;animation-delay:-1.55s;"></span>
+                <span class="floating cross" style="top:33.19713993871297%;left:86.14583333333333%;animation-delay:-0.95s;"></span>
+                <span class="floating square" style="top:28.19203268641471%;left:25.208333333333332%;animation-delay:-4.45s;"></span>
+                <span class="floating circle" style="top:39.7344228804903%;left:10.833333333333334%;animation-delay:-3.35s;"></span>
+                <span class="floating triangle" style="top:77.83452502553627%;left:24.427083333333332%;animation-delay:-2.3s;"></span>
+                <span class="floating triangle" style="top:2.860061287027579%;left:47.864583333333336%;animation-delay:-1.75s;"></span>
+                <span class="floating triangle" style="top:71.3993871297242%;left:66.45833333333333%;animation-delay:-1.25s;"></span>
+                <span class="floating triangle" style="top:31.256384065372828%;left:76.92708333333333%;animation-delay:-0.65s;"></span>
+                <span class="floating triangle" style="top:46.47599591419816%;left:38.90625%;animation-delay:-0.35s;"></span>
+                <span class="floating cross" style="top:3.4729315628192032%;left:19.635416666666668%;animation-delay:-4.3s;"></span>
+                <span class="floating cross" style="top:3.575076608784474%;left:6.25%;animation-delay:-4.05s;"></span>
+                <span class="floating cross" style="top:77.3237997957099%;left:4.583333333333333%;animation-delay:-3.75s;"></span>
+                <span class="floating cross" style="top:0.9193054136874361%;left:71.14583333333333%;animation-delay:-3.3s;"></span>
+                <span class="floating square" style="top:23.6976506639428%;left:63.28125%;animation-delay:-2.1s;"></span>
+                <span class="floating square" style="top:81.30745658835546%;left:45.15625%;animation-delay:-1.75s;"></span>
+                <span class="floating square" style="top:60.9805924412666%;left:42.239583333333336%;animation-delay:-1.45s;"></span>
+                <span class="floating square" style="top:29.009193054136876%;left:93.90625%;animation-delay:-1.05s;"></span>
+                <span class="floating square" style="top:52.093973442288046%;left:68.90625%;animation-delay:-0.7s;"></span>
+                <span class="floating square" style="top:81.51174668028601%;left:83.59375%;animation-delay:-0.35s;"></span>
+                <span class="floating square" style="top:11.542390194075587%;left:91.51041666666667%;animation-delay:-0.1s;"></span>
+            </div>
+          </div>
+
+          <script>
+            function openClub(evt, clubName, linkName) {
+              var i, tabs, links;
+              tabs = document.getElementsByName("tab");
+              links = document.getElementsByName("links");
+              for (i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+              }
+
+              for(i=0; i < links.length; i++) {
+                links[i].style.color = "rgb(168 85 247)";
+                links[i].style.borderBottom = "none";
+              }
+
+
+              document.getElementById(clubName).style.display = "flex";
+              document.getElementById(linkName).style.color = "rgb(253 230 138)";
+              document.getElementById(linkName).style.borderBottom = "solid";
+            }
+
+            function showWords(evt, descId) {
+                document.getElementById(descId).style.display = "inline-block";
+            }
+
+            function hideWords(evt, descId) {
+                document.getElementById(descId).style.display = "none";
+            }
+
+        </script>
+
+</body>
+</html>
